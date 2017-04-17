@@ -1,4 +1,3 @@
 #!/bin/bash
 export PYTHONPATH=./app:./app_packages
-echo $PYTHONPATH
 python3 app/{{ cookiecutter.app_name }}/app.py
