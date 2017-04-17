@@ -1,3 +1,6 @@
 #!/bin/bash
+# Set PYTHONPATH to point at app and app_packages directory
 export PYTHONPATH=./app:./app_packages
+
+# Start the app
 python3 app/{{ cookiecutter.app_name }}/app.py
