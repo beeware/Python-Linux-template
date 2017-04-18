@@ -3,4 +3,4 @@
 export PYTHONPATH=./app:./app_packages
 
 # Start the app
-python3 -m app/{{ cookiecutter.app_name }}
+python3 -s -m {{ cookiecutter.app_name }}
