@@ -3,7 +3,7 @@ Python Linux Template
 
 A template for building Python apps that will run under Linux.
 
-**This repository branch contains a template for Python 3.5**.
+**This repository branch contains a template for Python 3.4**.
 Other Python versions are available by cloning other branches of repository.
 
 Using this template
@@ -23,7 +23,7 @@ However, if you *do* want use this template directly...
 
 2. Run ``cookiecutter`` on the Python-Linux template::
 
-    $ cookiecutter https://github.com/pybee/Python-Linux-template --checkout 3.5
+    $ cookiecutter https://github.com/pybee/Python-Linux-template --checkout 3.4
 
 3. Add your code to the template. At the very minimum, you need to have an
    ``app/<app name>/__main__.py`` file that defines an entry point that
