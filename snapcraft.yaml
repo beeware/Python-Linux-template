@@ -1,0 +1,20 @@
+name: {{ cookiecutter.formal_name }}
+version: {{ cookiecutter.version }}
+description: {{ cookiecutter.description }}
+base: core18
+confinement: devmode
+parts:
+ {{ cookiecutter.formal_name }}:
+   plugin: python
+   source: .
+   python-version: python3
+   after: [desktop-gtk3]
+   python-packages: [toga, toga-gtk==0.3.0.dev11]
+   stage-packages: [python3, python3-gi, gir1.2-gtk-3.0, libglib2.0-bin]
+apps:
+ {{ cookiecutter.formal_name }}:
+   command: desktop-launch python3 -s -m {{ cookiecutter.formal_name }}
+   plugs:
+     - desktop
+     - desktop-legacy
+     - wayland
