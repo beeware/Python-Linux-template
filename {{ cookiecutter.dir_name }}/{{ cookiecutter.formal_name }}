@@ -1,6 +1,7 @@
 #!/bin/bash
 # Set PYTHONPATH to point at app and app_packages directory
-export PYTHONPATH=./app:./app_packages
+export APPDIR=$(dirname $(readlink -f "$0"))
+export PYTHONPATH=$APPDIR/app:$APPDIR/app_packages
 
 # Start the app
-python3 -s -m {{ cookiecutter.app_name }}
+python3 -s -m podium "$@"
