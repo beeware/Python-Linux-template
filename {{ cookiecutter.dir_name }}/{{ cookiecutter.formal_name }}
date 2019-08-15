@@ -4,4 +4,4 @@ export APPDIR=$(dirname $(readlink -f "$0"))
 export PYTHONPATH=$APPDIR/app:$APPDIR/app_packages
 
 # Start the app
-python3 -s -m podium "$@"
+python3 -s -m {{ cookiecutter.app_name }} "$@"
